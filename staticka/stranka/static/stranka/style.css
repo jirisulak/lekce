@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.text-primar {
+    color: red;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+#navbar {
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.50rem;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar a {
+    color: red;
+    text-decoration: none;
+}
+
+#navbar ul{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul a{
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul a:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+
+#showcase{
+    background: red url("media/uvodní.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#o_klubu {
+    background-color: white;
+    color: red;
+    display: flex;
+    
+   
+    
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 5rem;
+    margin-bottom:5%;
+    margin-top: 5%;
+    line-height: 1.1;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem ;
+}
+
+
+#o_klubu .items {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#o_klubu .item {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#o_klubu .items .item i {
+    background: black;
+    color: red;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.bg-darg {
+    background: black;
+    color: white;
+}
+
+.bg-light {
+    background: white;
+    color: black;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+    
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: white;
+    
+}
+
+#nas_tym {
+    display: flex;
+    background-color: black;
+    
+}
+
+#nas_tym .nas_tym-text{
+    background-color: grey;
+    margin-right:2%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-width: 7px;
+    border-color: red;
+    border-style:groove;
+    border-radius: 8%;
+}
+
+#nas_tym div {
+    flex: 1;
+}
+
+#nas_tym .nas_tym-img {
+    background: url('../img/logo1.jpg') no-repeat center center/cover; 
+    margin-left: 5%;
+}
+
+#kontakt {
+    display: flex;
+    background-color: black;
+}
+
+#kontakt .kontakt-text{
+    background-color: grey;
+    color: black;
+    text-align: left;
+    margin-right:10%;
+    margin-left: 10%;
+    border-width: 7px;
+    border-color: red;
+    border-style:groove;
+    border-radius: 8%;
+}
+
+#kontakt div {
+    flex: 1;
+}
+#kontakt .kontakt-img {
+    background: url('../img/raketa.jpg') no-repeat center center/cover;
+    margin-right: 5%;
+    border-radius: 5%;
+}
+
+
+.list1 {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list1 li {
+    padding: 0.5rem 0;
+    border-bottom: white;
+    
+}
+
+#zdroje {
+    background-color: black;
+    color: blue;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+.hr_1{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+.hr_2{
+    margin-bottom: 0%;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        flex-wrap: wrap;
+        justify-content:center ;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    #nas_tym .nas_tym-img {
+        display: none;
+    }
+
+    .l-heading{
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #navbar ul li a {
+        padding: 0.15rem;
+        margin: 0 0.15rem;
+    }
+
+}

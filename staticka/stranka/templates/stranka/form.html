@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervace kurtů</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        body{
+            background-color: white
+        }
+        .container {
+            max-width: 600px;
+            margin: 10px auto;
+            background-color: black;
+            padding: 1rem;
+            border: 5px red solid;
+            box-shadow: 10px 15px 7px 0px rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input,
+        select,
+        textarea,
+        fieldset {
+            padding: 5px;
+            margin: 8px 0;
+            box-shadow: 2px 3px 5px 3px rgba(252, 42, 42, 0.5);
+        }
+
+        fieldset {
+            background-color: #d71f15;
+            padding: 10px;
+        }
+
+        input[type="checkbox"]{
+            margin-right: 10px;
+            border: none;
+            box-shadow: none;
+        }
+
+        input[type="radio"]{
+            margin-right: 10px;
+            border: none;
+            box-shadow: none;
+        }
+
+        table,
+        tr,
+        th {
+            border: 1px solid red
+        }
+
+
+        table{
+            width: 50%;
+            text-align: center;
+            color: white;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo"><a href="index.html"></i><i class="fa-solid fa-medal text-primar"><span
+                        class="text-primar"></span></i> Tenisový klub Opava <i
+                    class="fa-solid fa-medal text-primar"></i></a></div>
+        <ul>
+            <a href="#home"><i class="fa-solid fa-house"></i></a>
+            <a href="#o_klubu">O klubu</a>
+            <a href="#nas_tym">Náš tým</a>
+            <a href="#kontakt"><i class="fa-solid fa-phone"></i></a>
+            <a href="form.html">Formulář</a>
+            <a href="#zdroje">Zdroje</a>
+        </ul>
+    </nav>
+
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4" id="nadpis-1">Ceny</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Vekovní kurty</th>
+                    <th colspan="2">Hala</th>
+                </tr>
+                <tr id="nadpis-3">
+                    <th>1 hodina</th>
+                    <th>1,5 hodiny</th>
+                    <th>2 hodiny</th>
+                    <th>3 hodiny</th>
+                </tr>
+                <tr>
+                    <th>200 Kč</th>
+                    <th>300 Kč</th>
+                    <th>400 Kč</th>
+                    <th>600 Kč</th>
+                    
+                </tr>
+
+            </thead>
+        </table>
+    </div>
+    <div class="container">
+        <h1>Rezervace kurtů</h1>
+        <form>
+            <div><label for="name">Jméno</label></div>
+            <div><input type="text" name="name" id="name" placeholder="Zadej své jméno"></div>
+            <div><label for="surname">Příjmení</label></div>
+            <div><input type="text" name="name" id="surname" placeholder="Zadej své příjmení"></div>
+            <div>
+                <label for="cas">Vyberte čas</label>
+                <select id="cas" name="cas">
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="message" rows="10" cols="30">
+Zadejte text
+                    </textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" id="vybaveni1" name="vybaveni1" value="Raketa">
+                <label for="vybaveni1"> Mám vlastní raketu</label><br>
+                <input type="checkbox" id="vybaveni2" name="vybaveni2" value="Míče">
+                <label for="vybaveni2"> Mám vlastní míče</label><br>
+                <input type="checkbox" id="vybaveni3" name="vybaveni3" value="Obuv">
+                <label for="vybaveni3"> Mám vlastní obuv</label>
+            </div>
+            <div>
+                <input type="radio" id="zacatecnik" name="fav_language" value="zacatecnik">
+                <label for="zacatecnik">Začátečník</label><br>
+                <input type="radio" id="pokrocily" name="fav_language" value="pokrocily">
+                <label for="pokrocily">Pokročilý</label><br>
+                <input type="radio" id="profi" name="fav_language" value="profi">
+                <label for="profi">Profi</label>
+            </div>
+            <div><input type="submit" vylue="Odeslat"></div>
+        </form>
+    </div>
+    
+    <footer id="main-footer" class="bg-darg text-center py-1">
+        <div>
+            <p>Copyright &copy; 2023, Jiří Šulák <i class="fa-brands fa-instagram fa-bounce fa-2xl"></i> <i
+                    class="fa-brands fa-facebook fa-bounce fa-2xl"></i> </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
